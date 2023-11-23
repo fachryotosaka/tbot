@@ -4,7 +4,7 @@ import { message } from 'telegraf/filters';
 import { promises as fs } from 'fs';
 import { InputFile } from 'telegraf/typings/core/types/typegram';
 
-const bot = new Telegraf(process.env.BOT_TOKEN ?? '');
+const bot = new Telegraf(process.env.TOKEN ?? '6678225462:AAH75v-pSSPEGnEFrtZ4GIdPG_0RA00JtgI');
 
 bot.on(message('text'), async (ctx) => {
     const senderUsername = ctx.message.from.username;

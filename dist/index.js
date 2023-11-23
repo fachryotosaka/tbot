@@ -8,11 +8,12 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+var _a;
 Object.defineProperty(exports, "__esModule", { value: true });
 const telegraf_1 = require("telegraf");
 const filters_1 = require("telegraf/filters");
 const fs_1 = require("fs");
-const bot = new telegraf_1.Telegraf("6678225462:AAH75v-pSSPEGnEFrtZ4GIdPG_0RA00JtgI");
+const bot = new telegraf_1.Telegraf((_a = process.env.TOKEN) !== null && _a !== void 0 ? _a : '');
 bot.on((0, filters_1.message)('text'), (ctx) => __awaiter(void 0, void 0, void 0, function* () {
     const senderUsername = ctx.message.from.username;
     const messageText = ctx.message.text;
